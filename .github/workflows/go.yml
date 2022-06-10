@@ -21,5 +21,8 @@ jobs:
     - name: Build
       run: go build -v ./...
 
+    - name: DNS
+      run: dig google.com
+
     - name: Test
-      run: ./NAMEinator -debug=true -domains 1000000
+      run: NAMEinator -debug=true -domains 100
