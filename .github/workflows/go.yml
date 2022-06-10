@@ -25,4 +25,4 @@ jobs:
       run: dig google.com
 
     - name: Test
-      run: NAMEinator -debug=true -domains 100
+      run: ./NAMEinator -debug=true -domains 100
